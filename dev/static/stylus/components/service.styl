@@ -1,0 +1,74 @@
+.section_title
+	padding-top 70px
+	text-align: center
+	margin-bottom: 50px
+	
+	h2
+		text-transform: uppercase
+		font-size: 36px
+		margin: 0 0 30px
+		padding-bottom: 30px
+		position: relative
+		font-weight: 500;
+	
+		&:after
+			border-bottom 1px solid #009ee3
+			content ""
+			display: block
+			left 45%
+			bottom 0
+			position absolute
+			width 115px
+	
+	p
+		color: #818181
+
+
+
+.service_items
+	
+	display flex
+	flex-wrap: wrap
+
+.service_item
+	padding-bottom: 30px
+	flex-wrap: wrap
+	text-align center
+	width 25%
+
+
+.service_icon
+	position relative
+	border: 3px solid #fff
+	display: inline-block
+	height: 85px
+	width: 85px
+	transform: rotate(47deg)
+	margin-bottom 20px
+	transition: all 0.3s ease 0s
+	
+	.icon-table, .icon-function, .icon-pie-chart, .icon-up
+		position absolute
+		fill #818181
+		size(48px, 48px)
+		transform: rotate(-48deg)
+		top 20%
+		left 20%
+		
+.service_item:hover .service_icon
+	margin-bottom 50px
+	border 3px solid #009ee3
+	
+.service_item-title
+	padding 10px
+	text-transform uppercase
+	font-size 20px
+	color: #252525
+	
+ul.service_ul
+	padding-left 40px
+	color: #818181;
+	li
+		list-style-type disc
+		text-align left
+		line-height 24px	

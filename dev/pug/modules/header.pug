@@ -1,0 +1,21 @@
+.wrapper
+	.header.animated-header
+		.container
+			.header_menu
+				.navbar-toggle(onclick='change()')
+					.navline.bar1
+					.navline.bar2
+					.navline.bar3
+				.line
+				.header_nav
+					ul.menu
+						each obj, key in nav.menu
+							li
+								a(href= key)= obj
+	#start.head_banner
+		.wr_title
+			h2.header_title.wow.fadeInDown УЧИМ EXCEL ЛЕГКО
+		.title_span.wow.fadeInDown базовый курс
+		.prime_button.top.wow.fadeInDown
+			span заказать
+		

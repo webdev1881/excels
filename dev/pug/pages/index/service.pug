@@ -1,0 +1,14 @@
+#service.service
+	.container
+		.section_title
+			h2.wow.bounceInLeft разделы курса
+			p.wow.bounceInRight Какие основные навыки Вы получите
+		.service_items
+			each obj, key in service
+				.service_item.wow.zoomIn
+					.service_icon
+						+icon(obj.icon)
+					.service_item-title= obj.title
+					ul.service_ul
+						each o, k in obj.list
+							li= o

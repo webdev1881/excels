@@ -1,0 +1,44 @@
+.prime_button
+	font-size: baseFontSize;
+	width 190px
+	height 50px
+	margin 0 auto
+	cursor: pointer;
+	position: relative;
+	text-transform uppercase
+	background-color: rgba(0,158,227, 0.85);
+	transition: all 0.5s;
+	
+	border: 2px solid #fff;
+	
+	span
+		width 100%
+		text-align center
+		z-index: 2;
+		position: absolute;
+		left: 50%;
+		top: 50%;		
+		transform: translate(-50%,-50%);
+		transition: all 0.5s;
+		color: rgba(255,255,255,1);
+
+	&::before
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 0%;
+		height: 100%;
+		z-index: 1;
+		background-color: rgba(255,255,255,1);
+		transition: all 0.5s;
+
+	&:hover::before
+		width: 100%;
+
+	&:hover span
+		color: #337ab7
+	
+
+	&.top
+		border: none
